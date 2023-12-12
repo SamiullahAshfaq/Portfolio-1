@@ -1,0 +1,210 @@
+/*Using google fonts Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/*Styling page as a whole */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+  background: #081b29;
+  color: #ededed;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ededed;
+  text-decoration: none;
+
+
+}
+/*Styling of Navigation bar */
+.navbar a {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ededed;
+  margin-left: 35px;
+  transition: .3s;
+
+}
+ /*Hover effect on Navigation bar */
+.navbar a:hover,
+.navbar a:active {
+  color: #00abf0;
+}
+ /*Styling of Text*/
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00abf0;
+
+}
+
+.home-content p {
+  font-size: 16px;
+  margin: 20px 0 40px;
+
+}
+/*Styling of two Buttons*/
+.home-content .btn-box {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 350px;
+}
+
+.btn-box a {
+  position: relative;
+  display: inline-flex;
+  width: 150px;
+  height: 100%;
+  background-color: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+}
+ /*Animation using Hover effect*/
+.btn-box a:hover {
+  color: #00abf0;
+}
+
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover {
+  color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before {
+  background: #00abf0;
+}
+
+.btn-box a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #081b29;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  transition: .5s;
+
+
+
+}
+
+.btn-box a:hover::before {
+  width: 100%;
+}
+/*Same Animation style for Social Media icons*/
+.home-sci {
+  position: absolute;
+  bottom: 10px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.home-sci a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+  font-size: 20px;
+  background: transparent;
+  border: 2px solid #00abf0;
+  border-radius: 50%;
+  color: #00abf0;
+  overflow: hidden;
+  transition: .5s;
+  z-index: 1;
+}
+.home-sci a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #00abf0;
+  height: 100%;
+  transition: .5s;
+  width: 0;
+  z-index: -1;
+}
+.home-sci a:hover {
+  color: #081b29;
+}
+.home-sci a:hover::before {
+  width: 100%;
+}
+/*Styling of pic*/
+.pic {
+  position: relative;
+  margin: 50px 20px 0px 100px;
+  object-fit: contain;
+  height: 385px;
+  width: 900px;
+  background: #0d78a2;
+  border-radius: 74% 26% 58% 42% / 35% 53% 47% 65% ;
+  -webkit-box-shadow:0px 0px 145px 4px rgba(13,120,162,0.69);
+  -moz-box-shadow: 0px 0px 145px 4px rgba(13,120,162,0.69);
+   box-shadow: 0px 0px 145px 4px rgba(13,120,162,0.69);
+}
+.pic .mun {
+  position: absolute;
+  bottom: -150px;
+  height: 500px;
+  margin-top: 50px;
+}
